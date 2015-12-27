@@ -63,7 +63,7 @@ if ($_GET["text"]) {
 if ($_GET["id"]) {
 
   $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, ('http://pastebin.com/raw.php?i=' . $_GET["id"]));
+  curl_setopt($ch, CURLOPT_URL, ('http://pastebin.com/raw/' . $_GET["id"]));
   curl_setopt($ch, CURLOPT_HEADER, 0);
   curl_setopt($ch, CURLOPT_REFERER, 'http://pastebin.com/');
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
